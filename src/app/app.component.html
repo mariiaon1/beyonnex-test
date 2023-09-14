@@ -1,0 +1,21 @@
+<div class="container">
+  <app-temperature-indicator
+    [minTemperature]="minTemp.value || 0"
+    [maxTemperature]="maxTemp.value || 0"
+    [targetTemperature]="targetTemp.value || 0"
+  ></app-temperature-indicator>
+  <div class="section">
+    <div class="section-item">
+      <label for="name">Mimimal temperature: </label>
+      <input id="name" type="number" [formControl]="minTemp">
+    </div>
+    <div class="section-item">
+      <label for="name">Maximal temperature: </label>
+      <input id="name" type="number" [formControl]="maxTemp">
+    </div>
+    <div class="section-item">
+      <label for="name">Target temperature: </label>
+      <input id="name" type="number" [formControl]="targetTemp">
+    </div>
+  </div>
+</div>

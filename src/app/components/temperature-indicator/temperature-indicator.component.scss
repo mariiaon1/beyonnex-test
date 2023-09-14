@@ -1,0 +1,68 @@
+.temperature-indicator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.min-max-lines {
+  width: 120px;
+  margin-bottom: 10px;
+}
+
+.min-line,
+.max-line {
+  width: 2px;
+  height: 20px;
+  background-color: #007bff;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  background-color: #f0f0f0;
+  border-radius: 50%;
+  border: 2px solid green;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.target-value {
+  margin-top: 5px;
+  font-weight: bold;
+  color: #ff5722;
+  text-align: center;
+  padding-right: 10px;
+}
+
+.radius {
+  position: absolute;
+  width: 50%;
+  height: 3px;
+  left: 50%;
+  top: 50%;
+  transform-origin: left center;
+}
+
+.indicator {
+  background: green;
+  transform: rotate(-30deg);
+}
+
+.min {
+  position: absolute;
+  background: green;
+  transform: rotate(40deg);
+  left: 2%;
+  top: 75%;
+}
+
+.max {
+  position: absolute;
+  background: green;
+  transform: rotate(-40deg);
+  left: 95%;
+  top: 75%;
+}
